@@ -5,7 +5,8 @@
 <% @pics.each do |pic| %>
   <<%= image_tag pic.pic.url(:thumb)  %> <br>
 
-    <<%= link_to 'Original Size', pic %> | <%= link_to 'Delete Pic', pic, :confirm => 'Are you sure?', :method => :delete %>
+    <<%= link_to 'Original Size', pic %> | <%= link_to 'Delete Pic', pic, :confirm => 'Are you sure?', :method => :delete %> <br>
+<br>
   
 <% end %>
 
