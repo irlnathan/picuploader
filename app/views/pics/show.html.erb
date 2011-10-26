@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<%= link_to 'Go back to the list', pics_path %> <br>
+<H3> To download the pic, just right click the image and click "Save image as..." </h3>
 
 <p>
 <%= image_tag @pic.pic.url() %>
 </p>
 
-<%= link_to 'Edit', edit_pic_path(@pic) %> |
-<%= link_to 'Back', pics_path %>
+

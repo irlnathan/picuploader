@@ -1,6 +1,6 @@
 class Pic < ActiveRecord::Base
   
-  has_attached_file :pic, :styles => { :thumb => "200x200>"},
+  has_attached_file :pic, :styles => { :thumb => "400x400>"},
  
   :storage => :s3,
   :bucket => '5my-pics',
