@@ -1,25 +1,14 @@
 <h1>Westlake 2011 - Homecoming Pics</h1>
 
-<table>
-  <tr>
- 
-    <th></th>
-    <th></th>
-    <th></th>
- 	<th></th>
-  </tr>
+<%= link_to 'New Pic', new_pic_path %> <br> <hr>
 
 <% @pics.each do |pic| %>
-  <tr>
-   
-	<td><%= image_tag pic.pic.url(:thumb)  %></td>
-    <td><%= link_to 'Original Size', pic %></td>
+  <<%= image_tag pic.pic.url(:thumb)  %> <br>
+
+    <<%= link_to 'Original Size', pic %> | <%= link_to 'Delete Pic', pic, :confirm => 'Are you sure?', :method => :delete %>
   
-    <td><%= link_to 'Delete Pic', pic, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
 <% end %>
-</table>
 
 <br />
 
-<%= link_to 'New Pic', new_pic_path %>
+
